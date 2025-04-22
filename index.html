@@ -1,72 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alessio's Pizzaria</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cardápio</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <img src="" alt="Imagem de pizzas ao fundo" class="hero-img">
-      <div class="hero-text">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Cardapio">Cardápio</a></li>
+          <li><a href="#Sobre">Sobre Nós</a></li>
+          <li><a href="#Contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
         <h1>Bem-vindo à Alessio's</h1>
         <p>Saborosas pizzas feitas especialmente para você!</p>
-        <button>Ver Cardápio</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="cardapio">
-      <h2>Cardápio</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="" alt="Pizza Margherita">
-          <h3>Pizza Margherita</h3>
-          <p>Molho de tomate, mussarela, manjericão fresco.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="Pizza Pepperoni">
-          <h3>Pizza Pepperoni</h3>
-          <p>Molho de tomate, pepperoni, queijo mussarela.</p>
-        </div>
+        <a href="#Cardapio" class="btn">Ver Cardápio</a>
       </div>
     </section>
 
-    <section class="sobre">
-      <img src="" alt="Imagem de pizza">
-      <h2>Sobre Nós</h2>
-      <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.</p>
+    <main>
+      <section id="Cardapio">
+        <h2>Cardápio</h2>
+        <div class="menu-items">
+          <div class="card">
+            <img
+              src="img/file-30-2.png"
+              alt="Pizza Margherita com manjericão"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                Molho de tomate, mussarela, manjericão fresco, champignon,
+                azeitonas pretas.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/images.jpeg" alt="Pizza Pepperoni e Frango" />
+            <div class="card-content">
+              <h3>Pizza Pepperoni/Frango</h3>
+              <p>
+                Molho de tomate, pepperoni, queijo mussarela, frango desfiado,
+                milho, orégano.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="img/20061306229f6chd7kii.png"
+              alt="Pizza de Chocolate com MM's"
+            />
+            <div class="card-content">
+              <h3>Pizza Chocolate com MM's</h3>
+              <p>Queijo, recheio cremoso de chocolate, MM's variados.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/pizza.jpg" alt="Pizza Pepperoni com 5 queijos" />
+            <div class="card-content">
+              <h3>Pizza Pepperoni com queijo</h3>
+              <p>
+                Molho de tomate, mussarela, Pepperoni temperado e recheio de 5
+                queijos, folhas verdes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="Sobre">
+      <div class="sobre-banner">
+        <h2>Sobre Nós</h2>
+        <p>
+          Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com
+          ingredientes frescos e receitas exclusivas.
+        </p>
+      </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
       <h2>Contato</h2>
       <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.</p>
-      <div class="info">
-        <p><strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br>
-        Centro, Cidade Qualquer/RJ - CEP: 12345-678</p>
 
-        <p><strong>Telefone:</strong> (11) 5555-5555<br>
-        <strong>E-mail:</strong> <a href="email:contato@alessios.pizzaria">contato@alessios.pizzaria</a></p>
+      <div class="contato-container">
+        <div class="contato-bloco">
+          <p>
+            <strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br />
+            Centro, Cidade Qualquer/RJ CEP: 12345-678
+          </p>
+        </div>
 
-        <p><strong>Horário de Funcionamento:</strong><br>
-        Segunda à Sábado: 11h00 às 23h00 - Domingo: 16h00 às 23h00</p>
+        <div class="contato-bloco">
+          <p>
+            <strong>Telefone:</strong> (11) 5555-5555<br />
+            <strong>E-mail:</strong>
+            <a href="mailto:contato@alessios.pizza">contato@alessios.pizza</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="horario-funcionamento">
+        <p>
+          <strong>Horário de Funcionamento:</strong><br />
+          Segunda a Sábado: 11h00 às 23h00 - Domingo: 16h00 às 23h00
+        </p>
       </div>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Alessio’s Pizzaria</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2025 Alessio’s Pizzaria</p>
+    </footer>
+  </body>
 </html>
