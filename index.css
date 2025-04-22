@@ -1,0 +1,12 @@
+header {
+  background: #202020;
+  color: #f1b50f;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+}
