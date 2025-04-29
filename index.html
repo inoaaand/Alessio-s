@@ -117,13 +117,55 @@
           Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com
           ingredientes frescos e receitas exclusivas.
         </p>
-        <h2>Envie sua sugestão de pizza!</h2>
-        <!-- tipo de pizza (doce, salgada) 
-       descricao da pizza (texto)
-       ingredientes obrigatorios(checkbox)
-       valor sugerido (caixa)
-       button (enviar) *cor amarelo-->
       </div>
+    </section>
+
+    <section>
+      <h2>Envie sua sugestão de pizza!</h2>
+      <form>
+        <label for="tipo">Tipo de pizza:</label><br />
+        <select id="tipo" name="tipo">
+          <option value="salgada">Salgada</option>
+          <option value="doce">Doce</option></select
+        ><br /><br />
+
+        <label for="descricao">Descrição da pizza:</label><br />
+        <textarea
+          id="descricao"
+          name="descricao"
+          rows="5"
+          cols="40"
+          placeholder="..."
+        ></textarea
+        ><br /><br />
+
+        <p>Ingredientes obrigatórios:</p>
+        <label>
+          <input type="checkbox" name="ingredientes" value="queijo" />
+          Queijo </label
+        ><br />
+        <label>
+          <input type="checkbox" name="ingredientes" value="tomate" />
+          Tomate </label
+        ><br />
+        <label>
+          <input type="checkbox" name="ingredientes" value="orégano" />
+          Orégano </label
+        ><br />
+        <label>
+          <input type="checkbox" name="ingredientes" value="borda recheada" />
+          Borda recheada </label
+        ><br /><br />
+
+        <label for="valor">Valor sugerido (R$):</label><br />
+        <input
+          type="number"
+          id="valor"
+          name="valor"
+        /><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <section id="Contato" class="contato">
